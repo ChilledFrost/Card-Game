@@ -44,4 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPrefab: {fileID: 4396964479631190331, guid: bc01246264d5e304eb8fc8dc1d1303a8, type: 3}
+  isPlayer: 0
+  isTurn: 0
   test: {fileID: 11400000, guid: 59ea71442ea041b4ba16402f2132db2c, type: 2}
+  test2: {fileID: 11400000, guid: db3f04e6928226c42a9e8a504201cf49, type: 2}
+  selectedCards: []

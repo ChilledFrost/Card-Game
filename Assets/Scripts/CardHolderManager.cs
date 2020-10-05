@@ -12,6 +12,7 @@ public class CardHolderManager : MonoBehaviour
     public bool isTurn;
 
     public Card test;
+    public Card test2;
 
     public List<CardManager> selectedCards = new List<CardManager>();
     private List<GameObject> cardsInHolder = new List<GameObject>();
@@ -27,9 +28,10 @@ public class CardHolderManager : MonoBehaviour
     }
     IEnumerator Testf()
     {
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 2; i++)
         {
             AddCard(test);
+            AddCard(test2);
             yield return new WaitForSeconds(.25f);
         }
 
