@@ -28,7 +28,7 @@ public class CardManager : MonoBehaviour
         clickedEvent?.Invoke(this);
         Clicked();
     }
-    private void Clicked()
+    public void Clicked()
     {
         switch(isSelected)
         {
