@@ -1539,6 +1539,14 @@ PrefabInstance:
       propertyPath: isPlayer
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7873554542087320949, guid: 0c8890a20e2807e41869f52f925efc02, type: 3}
+      propertyPath: test
+      value: 
+      objectReference: {fileID: 11400000, guid: 45f81a184bfff4c48b96875ef1df6f6c, type: 2}
+    - target: {fileID: 7873554542087320949, guid: 0c8890a20e2807e41869f52f925efc02, type: 3}
+      propertyPath: test2
+      value: 
+      objectReference: {fileID: 11400000, guid: 514f612f25466d94d900ecc387c15fc7, type: 2}
     - target: {fileID: 7873554542087320950, guid: 0c8890a20e2807e41869f52f925efc02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

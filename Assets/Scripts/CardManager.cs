@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Events;
 
 [RequireComponent(typeof(C_ApperanceManager))]
+
+// Just for management yk make shit easier hopefully?
 public class CardManager : MonoBehaviour
 {
     //Event to know when clicked
@@ -13,8 +15,8 @@ public class CardManager : MonoBehaviour
     //Variables
     public Card associatedCard;
     private C_ApperanceManager apperanceManager;
+
     public bool isSelected = false;
-    // Just for management yk make shit easier hopefully?
     private void Awake()
     {
         apperanceManager = GetComponent<C_ApperanceManager>();

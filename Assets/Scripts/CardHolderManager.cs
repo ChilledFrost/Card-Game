@@ -74,17 +74,24 @@ public class CardHolderManager : MonoBehaviour
         // Check if they're the same symbol and if it's a run
         if(card.associatedCard.cardSymbol == selectedCards[0].associatedCard.cardSymbol)
         {
-
+            if (selectedCards[selectedCards.Count - 1].associatedCard.cardValue < card.associatedCard.cardValue)
+            {
+                print($"selected{card.associatedCard.cardValue}");
+                card.isSelected = true;
+                selectedCards.Add(card);
+                return;
+            }
         }
 
         // Check if they're the same number
-        if (selectedCards[0].associatedCard.cardValue == card.associatedCard.cardValue)
+        if (selectedCards[selectedCards.Count - 1].associatedCard.cardValue == card.associatedCard.cardValue)
         {
             card.isSelected = true;
             selectedCards.Add(card);
             return;
         }
     }
+
     public void TurnInCards(CardManager[] cards)
     {
         // If it's not our turn then we can't remove the card
