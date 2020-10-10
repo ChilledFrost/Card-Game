@@ -26,7 +26,6 @@ public class CardManager : MonoBehaviour
     private void OnMouseUp()
     {
         clickedEvent?.Invoke(this);
-        Clicked();
     }
     public void Clicked()
     {

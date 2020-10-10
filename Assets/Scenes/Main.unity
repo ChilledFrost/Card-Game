@@ -296,6 +296,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 731075445}
+  - component: {fileID: 731075447}
+  - component: {fileID: 731075446}
   m_Layer: 0
   m_Name: PlayerOne
   m_TagString: Untagged
@@ -319,6 +321,43 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &731075446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731075444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c2dff5c4c09614f99347733ad92d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sum: 0
+  holderManager: {fileID: 0}
+--- !u!114 &731075447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 731075444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95f3e34c1537a994d817e9b900932bb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 4396964479631190331, guid: bc01246264d5e304eb8fc8dc1d1303a8, type: 3}
+  cardHolder: {fileID: 1036832377}
+  throwArea: {fileID: 1971754386}
+  isPlayer: 1
+  isTurn: 0
+  tweenTime: 0.25
+  hasCardsSelected: 0
+  test: {fileID: 11400000, guid: 514f612f25466d94d900ecc387c15fc7, type: 2}
+  test2: {fileID: 11400000, guid: 7a1cba3c95e981b418c1490c980c9335, type: 2}
+  test3: {fileID: 11400000, guid: 45f81a184bfff4c48b96875ef1df6f6c, type: 2}
+  selectedCards: []
 --- !u!1 &952338074
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,5 +1682,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'CardHolder '
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7873554542087320949, guid: 0c8890a20e2807e41869f52f925efc02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0c8890a20e2807e41869f52f925efc02, type: 3}
