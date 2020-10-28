@@ -3,8 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+
 public class CardHolderManager : MonoBehaviour
 {
+    public UnityEvent calculateSum;
     // Variables 
     public GameObject cardPrefab;
     public Transform cardHolder;
@@ -26,7 +29,7 @@ public class CardHolderManager : MonoBehaviour
     public Card test3;
 
     public List<CardManager> selectedCards = new List<CardManager>();
-    private List<GameObject> cardsInHolder = new List<GameObject>();
+    public List<GameObject> cardsInHolder = new List<GameObject>();
 
     // Testing
     private void Start()
@@ -57,6 +60,7 @@ public class CardHolderManager : MonoBehaviour
         cardManagerOfCard.SetUpApperance();
 
         ArrangeCards();
+        calculateSum?.Invoke();
     }
     public void SelectOrDeselectCard(CardManager card)
     {
@@ -149,6 +153,7 @@ public class CardHolderManager : MonoBehaviour
         isMultiple = false;
         isRun = false;
         hasCardsSelected = false;
+        calculateSum?.Invoke();
 
         ArrangeCards();
     }
